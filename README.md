@@ -12,8 +12,8 @@ Features:
 
 Installation:
 To run it locally, follow these steps:
-1. Clone the repository: git clone https://github.com/Xtley001/Resume-Application-Tracking-System.git
-2. Navigate to the project directory: cd Resume-Application-Tracking-System
+1. Clone the repository: git clone https://github.com/Xtley001/SkillSync.git
+2. Navigate to the project directory: cd SkillSync
 3. Install dependencies: pip install -r requirements.txt
 4. Set up environment variables (if any).
 5. Run the application: python app.py
