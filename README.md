@@ -16,9 +16,8 @@ To run it locally, follow these steps:
 3. Install dependencies: pip install -r requirements.txt
 4. Set up environment variables (if any).
 5. Run the application: python app.py
-6. URL:https://myskillsync.streamlit.app/
 
-Access the application at: http://localhost:8501 (or the appropriate port).
+Access the application at:https://myskillsync.streamlit.app/
 
 Usage:
 - Register and log in as an administrator or recruiter.
