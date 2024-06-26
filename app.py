@@ -4,10 +4,6 @@ import os
 import PyPDF2 as pdf
 from dotenv import load_dotenv
 import json
-import base64
-import pdf2image
-import io
-from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
@@ -70,7 +66,6 @@ uploaded_file = st.file_uploader("Upload Your Resume (PDF)...", type=["pdf"])
 
 # Adding widgets
 st.sidebar.header("Customize Your Experience")
-show_summary = st.sidebar.checkbox("Show Profile Summary")
 match_threshold = st.sidebar.slider("Set Match Threshold", 0, 100, 85)
 
 # Submit button for processing the resume and job description
@@ -91,10 +86,6 @@ if submit:
             # Parse response
             response_json = json.loads(response)
             
-            # Display the Gemini Response in a block format
-            st.markdown("### Response:")
-            st.json(response_json)
-            
             # Extract percentage match and missing keywords
             percentage_match = int(response_json.get("JD Match", "0").strip('%'))
             missing_keywords = response_json.get("MissingKeywords", [])
@@ -114,10 +105,9 @@ if submit:
                 bar_fig = px.bar(keywords_df, x='Keyword', y='Count', title='Missing Keywords')
                 st.plotly_chart(bar_fig)
             
-            # Optionally show profile summary
-            if show_summary:
-                st.markdown("### Profile Summary:")
-                st.write(response_json.get("Profile Summary", "No profile summary available."))
+            # Show profile summary
+            st.markdown("### Profile Summary:")
+            st.write(response_json.get("Profile Summary", "No profile summary available."))
             
         except Exception as e:
             st.error(f"Error: {str(e)}")
@@ -125,3 +115,7 @@ if submit:
         st.warning("Please paste the job description.")
     elif not uploaded_file:
         st.warning("Please upload a resume.")
+
+# Footer
+st.markdown("---")
+st.markdown("Designed by Christley with ❤️")
