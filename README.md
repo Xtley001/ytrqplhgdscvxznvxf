@@ -17,7 +17,7 @@ To run it locally, follow these steps:
 4. Set up environment variables (if any).
 5. Run the application: python app.py
 
-Access the application at:https://myskillsync.streamlit.app/
+Access the application at:https://myskillsync.streamlit.app
 
 Usage:
 - Register and log in as an administrator or recruiter.
@@ -33,7 +33,6 @@ Technologies Used:
 - PDF2Image
 - PyPDF2
 - Pandas
-- HTML/CSS
 
 Contributing:
 Contributions are welcome! Here's how you can contribute:
