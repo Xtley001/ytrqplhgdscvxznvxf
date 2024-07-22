@@ -118,4 +118,4 @@ if submit:
 
 # Footer
 st.markdown("---")
-st.markdown("Built by Christley with ❤️")
+st.markdown("© 2024 by Christley")
