@@ -17,8 +17,6 @@ To run it locally, follow these steps:
 4. Set up environment variables (if any).
 5. Run the application: python app.py
 
-Access the application at:https://myskillsync.streamlit.app
-
 Usage:
 - Register and log in as an administrator or recruiter.
 - Upload resumes and job descriptions.
