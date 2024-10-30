@@ -2,7 +2,7 @@
 
 SkillSync is a web-based application designed to streamline the recruitment process by efficiently managing and analyzing job applications and resumes. It helps recruiters and hiring managers organize, track, and evaluate candidates based on job descriptions and qualifications.
 
-Web link: https://skillsync.streamlit.app/
+Web link: https://myskillsync.streamlit.app/
 
 Features:
 - Resume Management: Upload, store, and organize resumes and job applications.
