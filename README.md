@@ -2,6 +2,8 @@
 
 SkillSync is a web-based application designed to streamline the recruitment process by efficiently managing and analyzing job applications and resumes. It helps recruiters and hiring managers organize, track, and evaluate candidates based on job descriptions and qualifications.
 
+Web link: https://skillsync.streamlit.app/
+
 Features:
 - Resume Management: Upload, store, and organize resumes and job applications.
 - Keyword Matching: Automatically match resumes with job descriptions using AI-driven algorithms.
@@ -14,8 +16,8 @@ To run it locally, follow these steps:
 1. Clone the repository: git clone https://github.com/Xtley001/SkillSync.git
 2. Navigate to the project directory: cd SkillSync
 3. Install dependencies: pip install -r requirements.txt
-4. Set up environment variables (if any).
-5. Run the application: python app.py
+4. Set up environment variables.
+5. Run the application: streamlit run app.py
 
 Usage:
 - Register and log in as an administrator or recruiter.
